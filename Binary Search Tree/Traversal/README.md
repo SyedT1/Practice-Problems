@@ -7,3 +7,7 @@
 + Evaluates Root Node after checking its left and right Nodes(fully)
 + Bottom to Top
 + Prints first:leaf Node 
+
+## InOrder Traversal
++ Evaluates Left Subtree at first
++ After Left Subtree is fully evaluated -> Root Node gets Evaluated -> right subtree to Root Node gets Evaluated
