@@ -38,5 +38,5 @@ int main()
     {
         insert(l, i);
     }
-    postOrder(l);
+    postOrder(l); 
 }
