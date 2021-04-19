@@ -41,7 +41,7 @@ void inOrder(tree *l)
     if (!l)
         return;
     inOrder(l->left);
-    cout << l->value << ' '; // once the left subtree is fully evaluated
+    cout << l->value << ' '; // once the left subtree is fully  evaluated
     inOrder(l->right);
 }
 int main()
