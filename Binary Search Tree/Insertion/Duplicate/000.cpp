@@ -21,9 +21,9 @@ void insert(tree *&k, int v)
         }
         else
         {
-            tree *subright = k->right->right, *subleft = k->right->left;
+            tree *subright = k->right, *subleft = k->left;
             tree *temp = new tree{v, subleft, subright};
-            k->right->right = temp;
+            k->right = temp;
             return;
         }
     }
@@ -47,7 +47,7 @@ void inOrder(tree *l)
 int main()
 {
     tree *l = nullptr;
-    int ar[] = {1, 1,2,3,3,3,3,-1, -3, -8, -10,-10,0,0, 0, -2, -7, -6, -5, -4, 10, 10, 10, 10, 10, 9, 19};
+    int ar[] = {1, 1, 2, 3, 3, 3, 3, -1, -3, -8, -10, -10, 0, 0, 0, -2, -7, -6, -5, -4, 10, 11, 11, 10, 10, 10, 10, 9, 19};
     for (int i : ar)
     {
         insert(l, i);
