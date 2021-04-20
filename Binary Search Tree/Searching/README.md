@@ -5,6 +5,6 @@
 + **Besides,complexity varies as per the tree is constructed** 
 
 ## Types of Searches
-+ Whether a value exists in the tree or not
-+ kth Maximum
-+ kth Minimum
++ **Whether a value exists in the tree or not**
++ **kth Maximum**
++ **kth Minimum**
