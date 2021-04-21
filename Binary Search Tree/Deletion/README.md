@@ -1,7 +1,7 @@
 ## Problems
 1. **Deleting elements within a certain range**
 2. **Deleting factors of k-elements**
-
+3, **Deleting BST keys outside a given range**
 
 ## Explanation to 1
 In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases  
