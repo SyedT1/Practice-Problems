@@ -1,4 +1,4 @@
-## This chuck of code made all the difference 
+## This chunk of code made all the difference 
 
 ```cpp
   if (k->value == v)
