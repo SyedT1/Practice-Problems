@@ -24,7 +24,12 @@ void postOrder(tree *l)
         return;
     postOrder(l->left);
     postOrder(l->right);
-    cout<<l->value<<' ';// ```diff this node here has been scanned fully. He has nothing to hide like the brand All Clear says "Nothing to hide" ```
+    cout<<l->value<<' ';
+    /*
+    ```diff
+      this node here has been scanned fully. He has nothing to hide like the brand All Clear says "Nothing to hide"
+    ```
+    */
 }
 ```
 ## InOrder Traversal
