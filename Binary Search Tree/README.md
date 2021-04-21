@@ -7,6 +7,7 @@ struct tree{
 ```
 
 ### Or use _class_ :
+
 ```cpp
 class tree{
    public:
