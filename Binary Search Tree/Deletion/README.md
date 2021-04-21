@@ -4,36 +4,40 @@
 
 
 ## Explanation to 1
-In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases
+In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases  
+
 **Case 1**: Node to be deleted doesn't have any left and right node(7)  
 
-Eg: 
+Exempli gratia:
+   
       7
-   nl  nl
+    nl  nl
    
 **Case 2**: Node to be deleted has a left or a right node (6)  
 
 
-Eg:  
+Exempli gratia:
 
        6   
      4  nl  
     nl nl   
  
-**Case 3**: Node to be deleted has a left and a right node (7)
-Eg:
-    10
-  7    11
-nl nl nl nl
+**Case 3**: Node to be deleted has a left and a right node (7) 
+Exempli gratia:
+     
+          10
+       7     11 
+     nl nl  nl nl
 
 **Here is the problem** if the following was the scenario 
 Eg:
-          4
-     2        100
-   1  nl    55   nl
- nl nl    nl   56
-              nl  57
-                 nl 59
+         
+            4
+        2        100
+      1  nl    55   nl
+    nl nl    nl   56
+                nl  57
+                   nl 59
                  
  **We see that in order to delete node valued 4 we have to replace the value 4 with some value greater or lesser than this**. We have to select a node
  from the **node valued 4's** right which is **node valued 100**. Here we will traverse from 100 to left until a nullptr is discovered to the nodes left.
