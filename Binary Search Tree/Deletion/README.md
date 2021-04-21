@@ -5,16 +5,19 @@
 
 ## Explanation to 1
 In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases
-**Case 1**: Node to be deleted doesn't have any left and right node(7)
+**Case 1**: Node to be deleted doesn't have any left and right node(7)  
+
 Eg: 
       7
    nl  nl
    
-**Case 2**: Node to be deleted has a left or a right node (6)
-Eg:
-     6
-   4  nl
- nl nl 
+**Case 2**: Node to be deleted has a left or a right node (6)  
+
+Eg: 
+
+     6  
+   4  nl  
+ nl nl   
  
 **Case 3**: Node to be deleted has a left and a right node (7)
 Eg:
