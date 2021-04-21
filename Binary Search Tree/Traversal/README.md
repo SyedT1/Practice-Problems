@@ -32,12 +32,12 @@ void postOrder(tree *l)
 + After Left Subtree is fully evaluated -> Root Node gets Evaluated -> right subtree to Root Node gets Evaluated
 + Prints first: **Left Subtree**
 ```cpp
-void preOrder(tree *l)
+void inOrder(tree *l)
 {
     if (!l)
         return;
-    cout << l->value << ' ';
-    preOrder(l->left);
-    preOrder(l->right);
+    inOrder(l->left);
+    cout << l->value << ' '; // once the left subtree is fully evaluated
+    inOrder(l->right);
 }
 ```
