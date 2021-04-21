@@ -4,9 +4,8 @@
 3. **Deleting BST keys outside a given range**
 
 ## Explanation to 1
-```diff
-- ## In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases  
-```
+**In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases** 
+
 **Case 1**: Node to be deleted doesn't have any left and right node(7)  
 
 Exempli gratia:
@@ -42,7 +41,9 @@ Exempli gratia:
     nl nl    nl   56
                 nl  57
                    nl 59
-                 
- **We see that in order to delete node valued 4 we have to replace the value 4 with some value greater or lesser than this**. We have to select a node
+ 
+ ```diff
+ We see that in order to delete node valued 4 we have to replace the value 4 with some value greater or lesser than this**. We have to select a node
  from the **node valued 4's** right which is **node valued 100**. Here we will traverse from 100 to left until a nullptr is discovered to the nodes left.
  We get **node valued 55** by doing that. But the problem is here. **If we were to remove node valued 55 we have to see if it has a subtree to it's right.**
+```
