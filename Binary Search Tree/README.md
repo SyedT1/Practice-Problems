@@ -6,7 +6,7 @@ struct tree{
 };
 ```
 
-**or _class_** :
+### Or use _class_ :
 ```cpp
 class tree{
    public:
