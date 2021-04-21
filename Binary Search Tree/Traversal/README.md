@@ -25,9 +25,7 @@ void postOrder(tree *l)
     postOrder(l->left);
     postOrder(l->right);
     cout<<l->value<<' ';
-    ```diff
-    + Hey
-    ```
+   //this node has been scanned fully(it's left and right nodes have been evalulated before it's evaluated)
 }
 ```
 ## InOrder Traversal
