@@ -1,3 +1,21 @@
+## This chuck of code made all the difference 
+
+```cpp
+  if (k->value == v)
+  {
+      if (!k->right)
+      {
+          insert(k->right, v);
+      }
+      else
+      {
+          tree *subright = k->right, *subleft = k->left;
+          tree *temp = new tree{v, subleft, subright};
+          k->right = temp;
+          return;
+      }
+  }
+```
 ## Keys to keep in mind once a duplicate is traced
 + the placement of a duplicate node is an arbitrary choice as the node can be placed left or right to the node having similar value/data
 + Suppose the duplicate is to be placed to the right, let check whether the node's right is nullptr or not
