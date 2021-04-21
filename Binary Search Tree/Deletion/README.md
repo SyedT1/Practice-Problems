@@ -4,8 +4,9 @@
 3. **Deleting BST keys outside a given range**
 
 ## Explanation to 1
-In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases  
-
+```diff
+- In order to delete Nodes from a tree we have to bear in mind about these 3 specific cases  
+```
 **Case 1**: Node to be deleted doesn't have any left and right node(7)  
 
 Exempli gratia:
