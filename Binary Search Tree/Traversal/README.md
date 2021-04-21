@@ -1,7 +1,7 @@
 ## PreOrder Traversal
 + Evaluates Root Node before moving to children
 + Top to bottom
-+ **Prints first**:root Node 
++ Prints first: **Root** Node 
 ```cpp
 void preOrder(tree *l)
 {
