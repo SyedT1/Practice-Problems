@@ -1,4 +1,4 @@
-**Either use struct**:
+### Either use _struct_:
 ```cpp
 struct tree{
    int value;
@@ -6,7 +6,7 @@ struct tree{
 };
 ```
 
-**or** :
+**or _class_** :
 ```cpp
 class tree{
    public:
