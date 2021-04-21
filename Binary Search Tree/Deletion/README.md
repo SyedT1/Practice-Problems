@@ -23,14 +23,17 @@ Exempli gratia:
     nl nl   
  
 **Case 3**: Node to be deleted has a left and a right node (7) 
+
 Exempli gratia:
+
      
           10
        7     11 
      nl nl  nl nl
 
 **Here is the problem** if the following was the scenario 
-Eg:
+
+Exempli gratia:
          
             4
         2        100
