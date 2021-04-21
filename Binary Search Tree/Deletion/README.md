@@ -1,3 +1,3 @@
 ## Problems
-+ Deleting elements within a certain range 
-+ Deleting factors of k-elements
++ **Deleting elements within a certain range** 
++ **Deleting factors of k-elements**
