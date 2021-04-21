@@ -3,8 +3,8 @@
 struct tree{
    int value;
    tree *left = nullptr, *right = nullptr;
-};```
-
+};
+```
 
 **OR** :
 ```cpp
