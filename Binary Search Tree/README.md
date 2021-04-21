@@ -6,7 +6,7 @@ struct tree{
 };
 ```
 
-**OR** :
+**or** :
 ```cpp
 class tree{
    public:
@@ -14,3 +14,4 @@ class tree{
      tree *left = nullptr, *right = nullptr;
 };
 ```
+**for declaration**
