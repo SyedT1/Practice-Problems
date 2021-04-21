@@ -25,9 +25,8 @@ void postOrder(tree *l)
     postOrder(l->left);
     postOrder(l->right);
     cout<<l->value<<' ';
-    /*
     ```diff
-      this node here has been scanned fully. He has nothing to hide like the brand All Clear says "Nothing to hide"
+     - this node here has been scanned fully. He has nothing to hide like the brand All Clear says "Nothing to hide"
     ```
     */
 }
