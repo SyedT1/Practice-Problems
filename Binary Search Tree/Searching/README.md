@@ -10,7 +10,10 @@
 + **kth Minimum**
 
 
-## Kth Maximum & Kth Minimum
+## Kth Maximum & Kth Minimum (Use InOrder traversal)
+
+**Following is the code to find kth-minimum** 
+
 ```cpp
 void minimum(int &m, tree *l, int &r)
 {
@@ -25,10 +28,15 @@ void minimum(int &m, tree *l, int &r)
     minimum(m, l->right, r);
 }
 ```
-**to find kth maximum things to do with the above code:**  
+**to find kth maximum,things to do with the above code:**  
 **Point 1** 
 
 ```diff
-- minimum (m,l->left,r); // at line 19 above
-+ maximum (m,l->right,r); // at line 19
+- minimum (m,l->left,r); //line to remove after return
++ maximum (m,l->right,r); //line to add after return
 ```
+
+**Point 2**
+```diff
++ maximum (m,l->left,r);//line to add after if statement for evaluation of m's value
+- minimum (m,l->right,r);//line to remove after the above line is added
