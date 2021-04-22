@@ -1,5 +1,5 @@
 ## Searching Complexity	
-+ **Best case:** ![O(1)](https://latex.codecogs.com/svg.latex?O%281%29) 
++ <img src="https://latex.codecogs.com/svg.latex?Worst\hspace{1.5mm}Case&space;:&space;O(1)" title="Worst\hspace{1.5mm}Case : O(1)" />
 + **Average case:** ![log_2(n)](https://latex.codecogs.com/svg.latex?log_2%28n%29)
 + **Worst case:** ![O(n)](https://latex.codecogs.com/svg.latex?O%28n%29)
 + **Besides,complexity varies as per the tree is constructed** 
