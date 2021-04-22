@@ -1,5 +1,4 @@
 ## Searching Complexity	
-+ $x_{1} + x_{2} + \cdots + x_{n}$
 + **Best case: O(1)** 
 + **Average case:O(log2(n))** 
 + **Worst case:O(n)** 
