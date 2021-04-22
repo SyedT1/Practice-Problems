@@ -39,7 +39,7 @@ int minimum(tree *l, int n)
     minimum(n, l, q);
     if (!(n < 1))
     {
-        throw "number of nodes is less than the query";
+        throw "Number of nodes in the tree is lesser than query\n";
     }
     return q;
 }
@@ -70,6 +70,6 @@ int main()
     }
     catch (const char *s)
     {
-        cerr << "Number of nodes in the tree is lesser than query\n";
+        cerr << s ;
     }
 }
