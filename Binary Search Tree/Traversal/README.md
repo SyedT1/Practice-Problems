@@ -44,6 +44,11 @@ void inOrder(tree *l)
 ```
 ## LevelOrder Traversal
 ```cpp
+void LvlO(tree *k)
+{
+    if (!k)
+        throw "Null tree";
+    int Qs = 1;
     queue<tree *> Q;
     Q.push(k);
     while (!Q.empty())
@@ -62,4 +67,5 @@ void inOrder(tree *l)
             cout << endl;
         }
     }
+}
  ```
