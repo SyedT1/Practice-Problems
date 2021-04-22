@@ -1,7 +1,6 @@
 ## Searching Complexity	
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 + **Best case: O(1)** 
-+ **Average case:O(log2(n))** 
++ **Average case:** <img src="https://latex.codecogs.com/svg.latex?log(n)" title="log(n)" />
 + **Worst case:O(n)** 
 + **Besides,complexity varies as per the tree is constructed** 
 
