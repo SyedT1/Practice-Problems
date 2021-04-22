@@ -43,7 +43,7 @@ Exempli gratia:
                    nl 59
  
  ## Points to bear in Mind:
-+ We see that in order to delete node valued 4 we have to replace the value 4 with some value greater or lesser than this. 
-+ We have to select a node from the node valued 4's right which is node valued 100.
-+ Here we will traverse from 100 to left until a nullptr is discovered to the nodes left.
-+ We get node valued 55 by doing that. But the problem is here.If we were to remove node valued 55 we have to see if it has a subtree to it's right.
+1. We see that in order to delete node valued 4 we have to replace the value 4 with some value greater or lesser than this. 
+2. We have to select a node from the node valued 4's right which is node valued 100.
+3. Here we will traverse from 100 to left until a nullptr is discovered to the nodes left.
+4. We get node valued 55 by doing that. But the problem is here.If we were to remove node valued 55 we have to see if it has a subtree to it's right.
