@@ -33,8 +33,8 @@ void minimum(int &m, tree *l, int &r)
 **Point 1** 
 
 ```diff
-- minimum (m,l->left,r); //line to remove after return
 + maximum (m,l->right,r); //line to add after return
+- minimum (m,l->left,r); //line to remove after above line is added
 ```
 
 **Point 2**
