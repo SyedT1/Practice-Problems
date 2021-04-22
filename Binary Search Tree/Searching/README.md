@@ -1,7 +1,7 @@
 ## Searching Complexity	
-+ <img src="https://latex.codecogs.com/svg.latex?Worst\hspace{1.5mm}Case&space;:&space;O(1)" title="Worst\hspace{1.5mm}Case : O(1)" />
-+ **Average case:** ![log_2(n)](https://latex.codecogs.com/svg.latex?log_2%28n%29)
-+ **Worst case:** ![O(n)](https://latex.codecogs.com/svg.latex?O%28n%29)
++ <img src="https://latex.codecogs.com/svg.latex?Best\hspace{1.5mm}case&space;:&space;O(1)" title="Best\hspace{1.5mm}case : O(1)" />
++ <img src="https://latex.codecogs.com/svg.latex?Average\hspace{1.5mm}case&space;:&space;log_2(n)" title="Average\hspace{1.5mm}case : log_2(n)" />
++ <img src="https://latex.codecogs.com/svg.latex?Worst\hspace{1.5mm}case&space;:&space;O(n)" title="Worst\hspace{1.5mm}case : O(n)" />
 + **Besides,complexity varies as per the tree is constructed** 
 
 ## Types of Searches
