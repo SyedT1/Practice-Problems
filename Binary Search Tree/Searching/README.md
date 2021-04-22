@@ -8,3 +8,27 @@
 + **Whether a value exists in the tree or not**
 + **kth Maximum**
 + **kth Minimum**
+
+
+## Kth Maximum & Kth Minimum
+```cpp
+void minimum(int &m, tree *l, int &r)
+{
+    if (!l)
+        return;
+    minimum(m, l->left, r);
+    --m;
+    if (m == 0)
+    {
+        r = l->value;
+    }
+    minimum(m, l->right, r);
+}
+```
+**to find kth maximum things to do with the above code:**  
+**Point 1** 
+
+```diff
+- minimum (m,l->left,r); // at line 19 above
++ maximum (m,l->right,r); // at line 19
+```
