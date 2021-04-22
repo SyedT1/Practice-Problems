@@ -70,6 +70,6 @@ int main()
     }
     catch (const char *s)
     {
-        cerr << "Number of nodes in the tree is lesser than query\n";
+        cerr << "Number of nodes in the tree is lesser than query \n";
     }
 }
