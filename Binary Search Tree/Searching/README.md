@@ -28,7 +28,8 @@ void minimum(int &m, tree *l, int &r)
     minimum(m, l->right, r);
 }
 ```
-**to find kth maximum,things to do with the above code:**  
+**To find kth maximum,things to do with the above code:**  
+
 **Point 1** 
 
 ```diff
@@ -40,3 +41,4 @@ void minimum(int &m, tree *l, int &r)
 ```diff
 + maximum (m,l->left,r);//line to add after if statement for evaluation of m's value
 - minimum (m,l->right,r);//line to remove after the above line is added
+```
