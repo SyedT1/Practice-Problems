@@ -42,3 +42,24 @@ void inOrder(tree *l)
     inOrder(l->right);
 }
 ```
+## LevelOrder Traversal
+```cpp
+    queue<tree *> Q;
+    Q.push(k);
+    while (!Q.empty())
+    {
+        tree *curr = Q.front();
+        cout<<curr->value<<' ';
+        Q.pop();
+        Qs--;
+        if (curr->left)
+            Q.push(curr->left);
+        if (curr->right)
+            Q.push(curr->right);
+        if (!Qs)
+        {
+            Qs = Q.size();
+            cout << endl;
+        }
+    }
+ ```
