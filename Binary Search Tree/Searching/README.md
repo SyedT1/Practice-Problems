@@ -1,6 +1,6 @@
 ## Searching Complexity	
 + **Best case: O(1)** 
-+ **Average case:** <img src="https://latex.codecogs.com/svg.latex?log_2(n)" title="log_2(n)" />
++ **Average case:** ![log_2(n)](https://latex.codecogs.com/svg.latex?log_2%28n%29)
 + **Worst case:O(n)** 
 + **Besides,complexity varies as per the tree is constructed** 
 
