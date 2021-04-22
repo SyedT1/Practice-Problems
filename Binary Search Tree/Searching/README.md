@@ -1,4 +1,5 @@
 ## Searching Complexity	
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 + **Best case: O(1)** 
 + **Average case:O(log2(n))** 
 + **Worst case:O(n)** 
