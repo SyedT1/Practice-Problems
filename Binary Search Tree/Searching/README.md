@@ -1,7 +1,7 @@
 ## Searching Complexity	
 + **Best case:**
            ![O(1)](https://latex.codecogs.com/svg.latex?O%281%29) 
-+ **Average case:**
++ **Average case:**  
            ![log_2(n)](https://latex.codecogs.com/svg.latex?log_2%28n%29)
 + **Worst case:**
             ![O(n)](https://latex.codecogs.com/svg.latex?O%28n%29)
