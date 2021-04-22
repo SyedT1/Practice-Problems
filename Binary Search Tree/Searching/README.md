@@ -1,6 +1,6 @@
 ## Searching Complexity	
 + **Best case: O(1)** 
-+ **Average case:** <img src="https://latex.codecogs.com/svg.latex?\log _{10} 3" title="log _{10} 3"/>
++ **Average case:** <img src="https://latex.codecogs.com/svg.latex?log_2(n)" title="log_2(n)" />
 + **Worst case:O(n)** 
 + **Besides,complexity varies as per the tree is constructed** 
 
