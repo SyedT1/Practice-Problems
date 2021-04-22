@@ -70,6 +70,6 @@ int main()
     }
     catch (const char *s)
     {
-        cerr << s;
+        cerr << s; 
     }
 }
