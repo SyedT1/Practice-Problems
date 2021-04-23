@@ -43,6 +43,8 @@ void inOrder(tree *l)
 }
 ```
 ## LevelOrder Traversal
++ Evaluates every root node and pushes its left and right child into the queue
++ Once every node is checked and the queue is empty,it stops
 ```cpp
 void LvlO(tree *k)
 {
