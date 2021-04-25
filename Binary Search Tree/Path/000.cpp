@@ -30,6 +30,7 @@ void dis(tree *k)
     cout << k->value << ' ';
     dis(k->right);
 }
+
 int countNodes(tree *n)
 {
     if (!n)
@@ -38,7 +39,7 @@ int countNodes(tree *n)
 }
 void printPaths(int a[], int s)
 {
-    for (int j = 0; j < s; )
+    for (int j = 0; j <= s;)
     {
         cout << a[j++] << ' ';
     }
@@ -48,13 +49,14 @@ void printPaths(tree *k, int a[], int s, int i)
 {
     if (k == nullptr)
     {
-        printPaths(a, i);
         return;
     }
     a[i] = k->value;
+    if (k->left == nullptr && k->right == nullptr)
+    {
+        printPaths(a, i);
+    }
     printPaths(k->left, a, s, i + 1);
-    if (k->left == nullptr || k->right == nullptr)
-        return;
     printPaths(k->right, a, s, i + 1);
 }
 void printPaths(tree *k)
@@ -69,7 +71,7 @@ void printPaths(tree *k)
 int main()
 {
     tree *cherry = nullptr;
-    int A[] = {4, 3, 0, -1, 2, 10, 9, 11};
+    int A[] = {1,-1,0,2,3,4};
     for (int i : A)
     {
         cherry->ins(cherry, i);
