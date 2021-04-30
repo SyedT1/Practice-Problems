@@ -25,14 +25,14 @@ bool hasPath(BinaryTreeNode *k, int start, int end)
 
 int main()
 {
-    string hP[] = {"false", "true"};
-    BinaryTreeNode *cherry = new BinaryTreeNode{67, new BinaryTreeNode{38, nullptr, nullptr}, new BinaryTreeNode{52, new BinaryTreeNode{99, nullptr, nullptr}, nullptr}};
+    string outcome[] = {"false", "true"};
+    BinaryTreeNode *cherry = new BinaryTreeNode{67, new BinaryTreeNode{38, nullptr, nullptr}, new BinaryTreeNode{152, new BinaryTreeNode{99, nullptr, nullptr}, nullptr}};
     cherry->left->left = new BinaryTreeNode{16, nullptr, nullptr};
     cherry->left->right = new BinaryTreeNode{42, new BinaryTreeNode{40, nullptr, nullptr}, nullptr};
     cout << hasPath(cherry, 52, 99) << endl;
-    int ar[][2] = {{67, 99}, {38, 40}, {67, 67}, {16, 16}, {52, 99}, {99, 67}, {38, 99}};
-    for (auto &i : ar)
+    int testcases[][2] = {{67, 99}, {67, 67}, {16, 16}, {99, 67}, {38, 99}, {67, 100}, {-1, 40}, {34, 64}};
+    for (auto &i : testcases)
     {
-        cout << "hasPath(tree," << *i << "," << *(i + 1) << ") = " << hP[hasPath(cherry, *i, *(i + 1))] << endl;
+        cout << "hasPath(tree," << *i << ", " << *(i + 1) << ") = " << outcome[hasPath(cherry, *i, *(i + 1))] << endl;
     }
 }
