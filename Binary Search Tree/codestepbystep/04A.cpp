@@ -32,7 +32,7 @@ int main()
     cout << hasPath(cherry, 52, 99) << endl;
     int testcases[][2] = {{67, 99}, {67, 67}, {16, 16}, {99, 67}, {38, 99}, {67, 100}, {-1, 40}, {34, 64}};
     for (auto &i : testcases)
-    {
+    { 
         cout << "hasPath(tree," << *i << ", " << *(i + 1) << ") = " << outcome[hasPath(cherry, *i, *(i + 1))] << endl;
     }
 }
