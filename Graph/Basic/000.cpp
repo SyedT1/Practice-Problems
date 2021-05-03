@@ -7,35 +7,44 @@ struct node
 };
 struct graph
 {
-    int vnum = 0;
-    node **adjList;
+    int numberofVertex = 0;
+    node **arr;
     graph(int v)
     {
-        vnum = v;
-        adjList = new node *[vnum];
-        for (int i = 0; i < vnum; i++)
-            adjList[i] = nullptr;
+        numberofVertex = v;
+        arr = new node *[numberofVertex];
+        for (int i = 0; i < numberofVertex; i++)
+            arr[i] = nullptr;
     }
 };
-void ins(graph *&k, int src, int des)
+void addEdge(graph *&g, int src, int des)
 {
-    k->adjList[src] = new node{des, k->adjList[src]};
+    g->arr[src] = new node{des, g->arr[src]};
+}
+void display(graph *g)
+{
+    for (int i = 0; i < g->numberofVertex; i++)
+    {
+        cout << "Vertex " << i << " is connected to : ";
+        if (!g->arr[i])
+        {
+            cout << "Nullptr" << endl;
+            continue;
+        }
+        for (node *print = g->arr[i]; print; print = print->next)
+        {
+            cout << print->value << ' ';
+        }
+        cout << endl;
+    }
 }
 int main()
 {
-    graph *tree = new graph(4);
-    ins(tree, 0, 1);
-    ins(tree, 0, 2);
-    ins(tree, 0, 3);
-    ins(tree, 1, 2);
-    ins(tree, 2, 3);
-    ins(tree, 3, 1);
-    for (int i = 0; i < 4; i++)
+    graph *g = new graph(5);
+    int a[][2] = {{0, 1}, {0, 3}, {0, 2}, {1, 3}, {3, 4}, {4, 5}, {2, 5}};
+    for (auto &i : a)
     {
-        node *t = tree->adjList[i];
-        cout << i << " is connected to  = ";
-        for (node *i = t; i; i = i->next)
-            cout << i->value << ' ';
-        cout << endl;
+        addEdge(g, *i, *(i + 1));
     }
+    display(g);
 }
