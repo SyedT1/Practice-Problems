@@ -46,7 +46,7 @@ void display(Set *k)
    cout << k->c << ' ';
    display(k->right);
 }
-queue<string> kthLevelFriends(bool fiscal, Graph *g, string src, int K)
+queue<string> kthLevelFriends(int K, Graph *g, string src)
 {
    if (!g)
       throw "null";
@@ -58,7 +58,7 @@ queue<string> kthLevelFriends(bool fiscal, Graph *g, string src, int K)
    if (!K)
       return collect;
    vis[src[0] - 'A'] = true;
-   int min_dis = 0, hold = 1;
+   int hold = 1;
    while (!collect.empty())
    {
       node *curr = g->linked[collect.front()[0] - 'A'];
@@ -87,6 +87,7 @@ queue<string> kthLevelFriends(bool fiscal, Graph *g, string src, int K)
          }
       }
    }
+   return {};
 }
 ostream &operator<<(ostream &out, queue<string> k)
 {
@@ -104,13 +105,12 @@ ostream &operator<<(ostream &out, queue<string> k)
 }
 void kthLevelFriends(Graph *g, string src, int K)
 {
-   bool fiscal = 1;
    if (K == 0)
    {
       cout << src;
       return;
    }
-   queue<string> fallout = kthLevelFriends(fiscal, g, src, K - 1);
+   queue<string> fallout = kthLevelFriends(K - 1, g, src);
    Set *friendlist = nullptr;
    while (!fallout.empty())
    {
@@ -154,7 +154,7 @@ int main()
    {
       for (int j = 0; j < 5; j++)
       {
-         cout << (!j ? i + " : " : fm(j) + i + ": ");
+         cout << (!j ? "for " + i + " if K = 0: " : fm(j) + i + ": ");
          try
          {
             kthLevelFriends(cherry, i, j);
