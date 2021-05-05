@@ -83,7 +83,6 @@ queue<string> kthLevelFriends(bool fiscal, Graph *g, string src, int K)
          }
       }
    }
-   return {};
 }
 ostream &operator<<(ostream &out, queue<string> k)
 {
@@ -102,7 +101,12 @@ ostream &operator<<(ostream &out, queue<string> k)
 void kthLevelFriends(Graph *g, string src, int K)
 {
    bool fiscal = 1;
-   queue<string> fallout = kthLevelFriends(fiscal, g, src, K-1);
+   if (K == 0)
+   {
+      cout << src;
+      return;
+   }
+   queue<string> fallout = kthLevelFriends(fiscal, g, src, K - 1);
    Set *friendlist = nullptr;
    while (!fallout.empty())
    {
@@ -114,6 +118,10 @@ void kthLevelFriends(Graph *g, string src, int K)
          curr = curr->next;
       }
       fallout.pop();
+   }
+   if (!friendlist)
+   {
+      throw "no friends";
    }
    display(friendlist);
 }
@@ -131,7 +139,7 @@ int main()
    }
    try
    {
-      kthLevelFriends(cherry, "A", 1);
+      kthLevelFriends(cherry, "G", 1);
    }
    catch (const char *s)
    {
