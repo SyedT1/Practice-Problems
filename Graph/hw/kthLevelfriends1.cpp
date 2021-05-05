@@ -66,7 +66,11 @@ queue<string> kthLevelFriends(bool fiscal, Graph *g, string src, int K)
       hold--;
       while (curr)
       {
-         if (!vis[curr->value[0] - 'A'])
+         if (K == 1)
+         {
+            collect.push(curr->value);
+         }
+         else if (!vis[curr->value[0] - 'A'])
          {
             collect.push(curr->value);
             vis[curr->value[0] - 'A'] = true;
@@ -129,6 +133,14 @@ void addEdge(Graph *&g, string src, string des)
 {
    g->linked[src[0] - 'A'] = new node{des, g->linked[src[0] - 'A']};
 }
+string fm(int x)
+{
+   if (x == 1)
+   {
+      return "friends of ";
+   }
+   return "friends-of-" + fm(x - 1);
+}
 int main()
 {
    Graph *cherry = new Graph(9);
@@ -137,13 +149,23 @@ int main()
    {
       addEdge(cherry, *i, *(i + 1));
    }
-   try
+   string findfriends[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I"};
+   for (string i : findfriends)
    {
-      kthLevelFriends(cherry, "G", 1);
-   }
-   catch (const char *s)
-   {
-      cout << s << endl;
+      for (int j = 0; j < 5; j++)
+      {
+         cout << (!j ? i + " : " : fm(j) + i + ": ");
+         try
+         {
+            kthLevelFriends(cherry, i, j);
+            cout << endl;
+         }
+         catch (const char *s)
+         {
+            cout << s << endl;
+         }
+      }
+      cout << endl;
    }
    return 0;
 }
