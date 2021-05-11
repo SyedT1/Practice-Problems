@@ -28,7 +28,7 @@ void range(BinaryTreeNode *&l, BinaryTreeNode *&k)
     if (!l->left->left)
     {
         k->data = l->left->data;
-        BinaryTreeNode *temp = l->left, *rig = l->left->left;
+        BinaryTreeNode *temp = l->left, *rig = l->left->right;
         delete temp;
         l->left = rig;
         return;
