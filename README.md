@@ -26,4 +26,5 @@ struct graph
         for (int i = 0; i < vnum; i++)
             adjList[i] = nullptr;
     }
-};```
+};
+```
