@@ -1,5 +1,5 @@
 # Practice-Problems
-_This Repository will contain problems from the recent contests I've participated in. _
+**This Repository will contain problems from the recent contests I've participated in.**
 
 **Todo Problems**
 + [**Linked List**](https://www.geeksforgeeks.org/data-structures/linked-list/)
