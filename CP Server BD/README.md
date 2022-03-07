@@ -8,4 +8,4 @@
 + **[Week 5: Bitwise Operations](https://vjudge.net/contest/479381)**
 + **[Week 6: Graph Theory](https://vjudge.net/contest/480351)**
 + **[Week 7: Dynamic Programming](https://vjudge.net/contest/481253)**
-
++ **[Week 8: Disjoint Set Union](https://vjudge.net/contest/483648)**
