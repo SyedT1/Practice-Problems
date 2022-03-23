@@ -1,3 +1,7 @@
+## Great Resources to follow(online PDF)
++ **[Competitive Programmer’s Handbook - Antti Laaksonen](https://cses.fi/book/book.pdf)**
++ **[Principles of Algorithmic Problem Solving - Johan Sannemo](https://www.csc.kth.se/~jsannemo/slask/main.pdf)**
++ **[Crash Course Coding Companion - Samuel Hsiang,Alexander Wei and Yang Liu](https://raw.githubusercontent.com/alwayswimmin/cs_guide/master/guide.pdf)**
 ## Weekly Contests based on Lecture
 + **[Week 1: Problem-Solving Round](https://vjudge.net/contest/475627)**
 + **[Week 1: STL](https://vjudge.net/contest/475626)**
