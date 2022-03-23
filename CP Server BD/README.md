@@ -10,3 +10,4 @@
 + **[Week 7: Dynamic Programming](https://vjudge.net/contest/481253)**
 + **[Week 8: Disjoint Set Union](https://vjudge.net/contest/483648)**
 + **[Week 9: Tree Algorithms](https://vjudge.net/contest/484331)**
++ **[Week 10: Segment Tree](https://vjudge.net/contest/485394)**
